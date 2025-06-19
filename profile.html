@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Courses</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" sizes="32x32" href="images/faviconreal.png" type="images/png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .course-card:hover {
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UiTM Courses Viewer</a>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <div class="container mt-3">
+    <a href="index.html" class="btn btn-outline-secondary">← Go Back</a>
+  </div>
+
+  <!-- MAIN SECTION -->
+  <div class="container py-5">
+    <h3 class="mb-4">My Profile</h3>
+
+    <!-- Profile Picture Card -->
+    <div class="d-flex justify-content-center mb-4">
+      <div class="card shadow-sm text-center p-4" style="max-width: 320px;">
+        <img src="images/mypfp.jfif" alt="Profile Photo" class="profile-img mx-auto mb-3">
+        <h5 class="mb-0">Nur Sabrina</h5>
+        <p class="text-muted">Active Student</p>
+      </div>
+    </div>
+
+    <!-- Student Info  -->
+    <div class="card mb-4 shadow-sm p-4">
+      <h5 class="mb-3">Student Information</h5>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Name:</strong> Nur Sabrina</li>
+        <li class="list-group-item"><strong>Matric No:</strong> 202130XXX1</li>
+        <li class="list-group-item"><strong>Programme:</strong> Bachelor of Information Science (Hons.)</li>
+        <li class="list-group-item"><strong>Campus:</strong> UiTM Puncak Alam</li>
+      </ul>
+    </div>
+
+    <!-- MAIN SECTION -->
+  <div class="container py-5">
+    <h3 class="mb-4">Current Registered Courses</h3>
+
+    <!-- Courses box -->
+    <div class="row g-4">
+      <!-- Course 1 -->
+      <div class="col-md-6">
+        <div class="card course-card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">IMS121 - UX Design in Project Management</h5>
+            <p class="card-text"><strong>Lecturer:</strong> Dr. Zurin </p>
+            <a href="profile.zurin.html" class="btn btn-outline-primary btn-sm">View Lecturer Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 2 -->
+      <div class="col-md-6">
+        <div class="card course-card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">IMS122 - Advanced Web Design & Content Management</h5>
+            <p class="card-text"><strong>Lecturer:</strong> Mr. Aiman Hazim</p>
+            <a href="profile.aiman.html" class="btn btn-outline-primary btn-sm">View Lecturer Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 3 -->
+      <div class="col-md-6">
+        <div class="card course-card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">IMS123 - UI Design </h5>
+            <p class="card-text"><strong>Lecturer:</strong> Ms. Nur Alya</p>
+            <a href="profile.alya.html" class="btn btn-outline-primary btn-sm">View Lecturer Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 4 -->
+      <div class="col-md-6">
+        <div class="card course-card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">IMS124 - Cybersecurity </h5>
+            <p class="card-text"><strong>Lecturer:</strong> Ms. Nor Aimy</p>
+            <a href="profile.aimy.html" class="btn btn-outline-primary btn-sm">View Lecturer Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course 5 -->
+      <div class="col-md-6">
+        <div class="card course-card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">IMS125 - Data Analytics</h5>
+            <p class="card-text"><strong>Lecturer:</strong> Dr. Humairah</p>
+            <a href="profile.humairah.html" class="btn btn-outline-primary btn-sm">View Lecturer Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    &copy; 2025 UiTM Course Viewer. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+

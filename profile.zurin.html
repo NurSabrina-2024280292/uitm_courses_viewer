@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecturer Profile</title>
+  <link rel="icon" sizes="32x32" href="images/faviconreal.png" type="images/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: #555;
+    }
+
+    .info-value {
+      color: #333;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UiTM Courses Viewer</a>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <div class="container mt-3">
+    <a href="profiles.html" class="btn btn-outline-secondary">← Back to Lecturers</a>
+  </div>
+
+  <!-- PROFILE SECTION -->
+  <div class="container py-5">
+    <div class="row g-4 align-items-start">
+      
+      <!-- Profile Picture & Name (Side-by-side) -->
+<div class="col-md-4">
+  <div class="card shadow-sm p-4 d-flex align-items-center flex-row gap-3">
+    <img src="images/pfpzurin.jpeg" alt="Lecturer Photo" class="profile-img">
+    <div>
+      <h5 class="mb-1">Dr. Zurin Ahmad</h5>
+      <p class="text-muted mb-1">Senior Lecturer</p>
+      <p class="text-muted mb-0">Faculty of Information Sciences</p>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Profile Details -->
+      <div class="col-md-8">
+        <div class="card shadow-sm p-4">
+          <h5 class="mb-4">Lecturer Information</h5>
+          <div class="row mb-3">
+            <div class="col-sm-4 info-label">Email:</div>
+            <div class="col-sm-8 info-value">zzurin@uitm.edu.my</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4 info-label">Phone:</div>
+            <div class="col-sm-8 info-value">+60 18-345 8770</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4 info-label">Expertise:</div>
+            <div class="col-sm-8 info-value">Specializes in UX Design, Human-computer Interaction, Front-End Development.</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4 info-label">Department:</div>
+            <div class="col-sm-8 info-value">Creative Media and Interface Design </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-4 info-label">Office Location:</div>
+            <div class="col-sm-8 info-value">Room 3-12, Level 3, Anum Wing, UiTM Shah Alam</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 info-label">Research Interests:</div>
+            <div class="col-sm-8 info-value">
+              <ul class="mb-0">
+                <li> User Experience</li>
+                <li> Interactive systems</li>
+                <li> Usability Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    &copy; 2025 UiTM Course Viewer. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

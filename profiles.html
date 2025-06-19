@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecturer Profiles</title>
+  <link rel="icon" sizes="32x32" href="images/faviconreal.png" type="images/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .card:hover {
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: 600;
+    }
+
+    .back-btn {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UiTM Course Viewer</a>
+    </div>
+  </nav>
+
+  <!-- Back Button -->
+  <div class="container back-btn">
+    <a href="index.html" class="btn btn-outline-secondary">
+      ← Go Back
+    </a>
+  </div>
+
+  <!-- LECTURERS LIST -->
+  <div class="container py-5">
+    <h3 class="mb-4 text-center">Lecturer Profiles</h3>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Lecturer 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/pfpzurin.jpeg" class="card-img-top" alt="Dr. Zurin">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Zurin</h5>
+            <p class="card-text">Expert in UX Design and Human-Computer Interaction.</p>
+            <a href="profile.zurin.html" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lecturer 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/pfpaiman.jpg" class="card-img-top" alt="Mr. Aiman Hazim">
+          <div class="card-body">
+            <h5 class="card-title">Mr. Aiman Hazim</h5>
+            <p class="card-text">Specializes in backend systems, APIs, and Laravel.</p>
+            <a href="profile.aiman.html" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lecturer 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/pfpalya.webp" class="card-img-top" alt="Ms. Alya">
+          <div class="card-body">
+            <h5 class="card-title">Ms. Alya</h5>
+            <p class="card-text">UI design specialist with focus on accessible design.</p>
+            <a href="profile.alya.html" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lecturer 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/download.jfif" class="card-img-top" alt="Ms. Aimy">
+          <div class="card-body">
+            <h5 class="card-title">Ms. Aimy</h5>
+            <p class="card-text">Teaches cybersecurity and digital forensics.</p>
+            <a href="profile.aimy.html" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lecturer 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="images/pfphumairah.avif" class="card-img-top" alt="Dr. Humairah">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Humairah</h5>
+            <p class="card-text">Focuses on data visualization and analytics in IT.</p>
+            <a href="profile.humairah.html" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    &copy; 2025 UiTM Course Viewer. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

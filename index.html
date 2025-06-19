@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" sizes="32x32" href="images/faviconreal.png" type="images/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar-custom {
+      background-color: #8153d6;
+    }
+
+    .profile-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .main-content {
+      padding: 30px 15px;
+      flex: 1;
+    }
+
+    .dashboard-card {
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .stats-card {
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="images/logouitm.png" alt="UiTM Logo" width="30" height="30">
+        UiTM Courses Viewer
+      </a>
+      <div class="ms-auto dropdown me-3">
+        <button class="btn bg-light dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/mypfp.jfif" alt="Your Picture" class="profile-pic">
+          <span class="ms-2">Sabrina</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content container">
+    <h2 class="mb-1">Welcome to UiTM Course Viewer!</h2>
+    <h5 class="text-muted mb-4">Today is <span id="todayDate"></span></h5>
+
+    <!-- header greeting -->
+<div class="alert alert-light d-flex align-items-center" role="alert">
+  <span>Hey&nbsp;</span><strong>Sabrina</strong>, welcome back to your dashboard! 🎓
+</div>
+
+    <!-- Stats Cards -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-white bg-success shadow-sm stats-card">
+          <div class="card-body">
+            <h5 class="card-title">5 Lecturers Profiles</h5>
+            <p class="card-text">5 Registered Courses and Lecturers available for viewing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-white bg-secondary shadow-sm stats-card">
+          <div class="card-body">
+            <h5 class="card-title">Account Status</h5>
+            <p class="card-text"> Account details need to be updated! </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Action Cards -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm dashboard-card">
+          <div class="card-body">
+            <h5 class="card-title">Your Profile</h5>
+            <p class="card-text">View your registered courses and edit your personal details.</p>
+            <a href="profile.html" class="btn btn-outline-primary mt-2">Go to Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm dashboard-card">
+          <div class="card-body">
+            <h5 class="card-title">Lecturer Profiles</h5>
+            <p class="card-text">Browse lecturer information and expertise.</p>
+            <a href="profiles.html" class="btn btn-outline-primary mt-2">View Lecturers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm dashboard-card">
+          <div class="card-body">
+            <h5 class="card-title">Main Menu</h5>
+            <p class="card-text">Navigate to available system sections.</p>
+            <a href="menu.html" class="btn btn-outline-secondary mt-2">Go to Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Announcement -->
+    <div class="card shadow-sm mt-4">
+      <div class="card-body">
+        <h5 class="card-title">📢 Announcement</h5>
+        <p class="card-text">Remember to update your profile before June 30!</p>
+      </div>
+    </div>
+
+    <!-- Completion Bar -->
+    <div class="mt-4">
+      <h6>Profile Completion</h6>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 80%">80%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    &copy; 2025 UiTM Course Viewer. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS + Date Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("todayDate").textContent = new Date().toDateString();
+  </script>
+</body>
+</html>
+
+
+
+
